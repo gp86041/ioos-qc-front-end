@@ -25,7 +25,9 @@ st.markdown('If you have any questions or comments on this app, please submit th
 
 st.markdown("---")
 
-uploaded_file = st.file_uploader("Upload your water level data down below. Please prepare your water level data similar to [Example Water Level Test File](https://github.com/Dylan-Pugh/ioos-qc-front-end/raw/main/water_level_example_test.csv). If you have water level data from multiple sources, please combine them into one file and process each source as a new variable.")
+st.markdown('Before you begin. Please prepare your water level data similar to [Example Water Level Test File](https://github.com/Dylan-Pugh/ioos-qc-front-end/raw/main/water_level_example_test.csv). If you have water level data from multiple sources, please combine them into one file and process each source as a new variable.')
+
+uploaded_file = st.file_uploader("Upload your water level data down below.")
 if uploaded_file is not None:
      # Can be used wherever a "file-like" object is accepted:
      df = pd.read_csv(uploaded_file)
