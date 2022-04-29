@@ -15,13 +15,13 @@ def convert_df(df):
 
 st.title("IOOS QC Web Application")
 
-st.markdown('This free open source app was initially built during [IOOS Code Sprint 2022](https://ioos.github.io/ioos-code-sprint/topics/07-ioos-qc-non-programmers/).')
+st.markdown('This free open source app was initially built during [IOOS Code Sprint 2022](https://ioos.github.io/ioos-code-sprint/topics/07-ioos-qc-non-programmers/). It was originally built for processing water level data only, but we are looking to expand to more parameters, and welcome any contributions.')
 
 st.markdown('If you wish to run the code locally or contribute to this app, please check out our repository: [ioos qc front end](https://github.com/Dylan-Pugh/ioos-qc-front-end).')
 
 st.markdown('If you have any questions or comments on this app, please submit them [here as a new issue](https://github.com/Dylan-Pugh/ioos-qc-front-end/issues).')
 
-st.markdown('[Example Water Level Test File](https://github.com/Dylan-Pugh/ioos-qc-front-end/raw/main/water_level_example_test.csv)')
+st.markdown('Please prepare your water level data similar to [Example Water Level Test File](https://github.com/Dylan-Pugh/ioos-qc-front-end/raw/main/water_level_example_test.csv). If you have water level data from multiple sources, please combine them into one file and process each source as a new variable.')
 
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
